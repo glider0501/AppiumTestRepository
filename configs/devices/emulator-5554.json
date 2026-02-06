@@ -1,0 +1,6 @@
+{
+  "automationName": "UiAutomator2",
+  "deviceName": "Android_Emulator_API_34",
+  "orientation": "PORTRAIT",
+  "newCommandTimeout": 300
+}

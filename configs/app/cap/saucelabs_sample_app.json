@@ -1,0 +1,6 @@
+{
+  "appPackage": "com.swaglabsmobileapp",
+  "appActivity": "com.swaglabsmobileapp.MainActivity",
+  "noReset": false,
+  "autoGrantPermissions": true
+}
