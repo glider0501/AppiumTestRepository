@@ -40,10 +40,19 @@ Copy `config_template.ini` → `configs/config.ini`
 configs/devices/android_emulator.json     # Device caps
 configs/app/cap/swag_labs_v2_7_1.json     # App caps
 ```
-
 **`.env` overrides `config.ini` priority**
 
-### 4. PyCharm: Set Working Directory
+### 4. Configure User Data (`users_config.ini`)
+Copy `users_config_template.ini` → `configs/users_config.ini`
+
+
+**Required data:**
+```
+username=[standard user name]
+password=[standard user password]
+```
+
+### 5. PyCharm: Set Working Directory
 ```
 Working directory → Project Root (contains .env, configs/, tests/)
 ```
