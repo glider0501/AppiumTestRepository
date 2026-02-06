@@ -37,14 +37,6 @@ Get Test Product Price
     ${price}  Get Product Details By Index    ${idx}    ${PRODUCTS_PRICE_LOC}
     Set Test Variable    ${TEST_PRODUCT_PRICE}    ${price}
 
-#Get Test Product Name
-#    [Arguments]    ${idx}
-#    @{titles}=    Get WebElements    ${PRODUCTS_TITLES_LOC}
-#    ${actual_count}=    Get Length    ${titles}
-#    Should Be True    ${actual_count} >= ${idx}    Only ${actual_count} products, cannot access #${idx}
-#    ${test_product_name}=    Get Text    ${titles}[${idx-1}]
-#    Set Test Variable    ${TEST_PRODUCT_NAME}    ${test_product_name}
-
 Click Add To Cart Button
     [Arguments]    ${idx}
     @{add_buttons}=    Get WebElements    ${ADD_TO_CART_LOC}

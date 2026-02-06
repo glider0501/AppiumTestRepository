@@ -5,7 +5,7 @@ import time
 
 from robot.api import logger
 
-from Config import Config  # your adjusted config helper
+from Config import Config
 
 
 class AppiumServerManager:
@@ -57,7 +57,7 @@ class AppiumServerManager:
         self._process = subprocess.Popen(
             cmd,
             shell=True,
-            creationflags=subprocess.CREATE_NEW_CONSOLE,  # VISIBLE WINDOW
+            creationflags=subprocess.CREATE_NEW_CONSOLE,
         )
 
         end_time = time.time() + wait_seconds

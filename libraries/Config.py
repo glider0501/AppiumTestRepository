@@ -36,7 +36,6 @@ class Config:
 
 
     def get_appium_remote_host(self) -> str:
-        # env overrides config.ini; config has no [appium], so just use env
         return self._get_env("APPIUM_HOST", "127.0.0.1")
 
     def get_appium_remote_port(self) -> str:
@@ -57,11 +56,9 @@ class Config:
 
 
     def get_device_profile(self) -> str:
-        # required in config.ini
         return self._config["device"].get("profile")
 
     def get_app_caps_name(self) -> str:
-        # required in config.ini
         return self._config["app"].get("app_capabilities")
 
 

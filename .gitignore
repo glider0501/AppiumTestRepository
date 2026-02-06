@@ -1,6 +1,7 @@
 .env
 file.env
 **/config.ini
+**/users_config.ini
 
 .venv/
 __pycache__/
